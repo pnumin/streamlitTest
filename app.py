@@ -9,7 +9,7 @@ uploaded_file = st.sidebar.file_uploader("Excel 파일 업로드", type=["xlsx"]
 
 if uploaded_file is not None:
     # Excel 파일 읽기
-    data = pd.read_excel(uploaded_file, engine='openpyxl')
+    data = pd.read_excel(uploaded_file)
 
     st.write("업로드한 데이터:")
     st.write(data)
