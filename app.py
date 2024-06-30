@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+matplotlib.use('Agg')
 
 st.write('Hello, *World!* :sunglasses:')
 st.write('Hello, Stremlit!!')
