@@ -1,7 +1,5 @@
 import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-matplotlib.use('Agg')
+import pandas as pd 
 
 st.write('Hello, *World!* :sunglasses:')
 st.write('Hello, Stremlit!!')
@@ -19,11 +17,6 @@ if uploaded_file is not None:
     # 데이터프레임 정보 표시
     st.write("데이터프레임 정보:")
     st.write(data.describe())
-
-    # 차트 그리기
-    st.write("데이터 시각화:")
-    fig, ax = plt.subplots()
-    data.plot(kind='bar', ax=ax)
-    st.pyplot(fig)
+ 
 else:
     st.write("Excel 파일을 업로드해주세요.")
